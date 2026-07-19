@@ -100,6 +100,23 @@ setCache(ck, all);
 return all;
 }
 async function getArticle(url) {
+const decoded = decodeURIComponent(url);
+for (const [, entry] of cache) {
+if (entry && Date.now() - entry.ts < CACHE_TTL && Array.isArray(entry.data)) {
+const found = entry.data.find(a => a.url === decoded);
+if (found) return found;
+}
+}
+for (const [, entry] of cache) {
+if (entry && Date.now() - entry.ts < CACHE_TTL && entry.data && entry.data.latest) {
+const found = entry.data.latest.find(a => a.url === decoded);
+if (found) return found;
+for (const cat of Object.values(entry.data.categories || {})) {
+const found2 = Array.isArray(cat) ? cat.find(a => a.url === decoded) : null;
+if (found2) return found2;
+}
+}
+}
 return null;
 }
 module.exports = { fetchHome, fetchCategory, searchArticles, getArticle, VALID_CATEGORIES };
