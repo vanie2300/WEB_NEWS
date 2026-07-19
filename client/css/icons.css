@@ -1,0 +1,6 @@
+.icon{width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;flex-shrink:0}
+.icon-sm{width:16px;height:16px}
+.icon-lg{width:24px;height:24px}
+.icon-xl{width:32px;height:32px}
+.nav .icon{width:20px;height:20px}
+.sidebar-collapsed .nav .icon{width:20px;height:20px}

@@ -1,0 +1,4 @@
+.footer{background:var(--color-footer);color:#fff;padding:var(--spacing-lg);text-align:center;font-size:var(--font-size-xs);display:flex;justify-content:space-between;align-items:center;border-radius:var(--radius-lg);min-height:var(--footer-height)}
+.footer-links{display:flex;gap:var(--spacing-md)}
+.footer-links a{color:rgba(255,255,255,.7);transition:color var(--transition-fast)}
+.footer-links a:hover{color:#fff;text-decoration:none}

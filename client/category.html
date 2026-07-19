@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Category — NewsSphere</title>
+<meta name="description" content="Browse the latest news by category on NewsSphere.">
+<meta property="og:title" content="Category — NewsSphere">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NewsSphere">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>N</text></svg>">
+<link rel="preconnect" href="https://picsum.photos" crossorigin>
+<link rel="preconnect" href="https://newsapi.org" crossorigin>
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/icons.css">
+<link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/cards.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/ui-enhancements.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<script>(function(){var t=localStorage.getItem('theme')||'classic';if(t==='dark')document.documentElement.classList.add('dark');else if(t!=='classic')document.documentElement.classList.add('theme-'+t);var s=localStorage.getItem('sidebar');if(s==='collapsed')document.documentElement.classList.add('sidebar-collapsed');})();</script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none"><use href="icons/sprite.svg"/></svg>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div class="container">
+<aside class="sidebar" aria-label="Main navigation">
+<button class="sidebar-toggle" aria-label="Toggle sidebar" id="sidebar-toggle">
+<svg class="icon"><use href="icons/sprite.svg#icon-menu"/></svg>
+</button>
+<div class="logo" aria-label="NewsSphere">
+<svg class="icon icon-lg"><use href="icons/sprite.svg#icon-newspaper"/></svg>
+<span class="logo-text">NewsSphere</span>
+</div>
+<nav class="nav" aria-label="Category navigation">
+<a href="index.html" title="Home"><svg class="icon"><use href="icons/sprite.svg#icon-home"/></svg><span class="nav-label">Home</span></a>
+<a href="category.html?name=world" class="active" title="World" aria-current="page"><svg class="icon"><use href="icons/sprite.svg#icon-globe"/></svg><span class="nav-label">World</span></a>
+<a href="category.html?name=technology" title="Technology"><svg class="icon"><use href="icons/sprite.svg#icon-cpu"/></svg><span class="nav-label">Tech</span></a>
+<a href="category.html?name=sports" title="Sports"><svg class="icon"><use href="icons/sprite.svg#icon-trophy"/></svg><span class="nav-label">Sports</span></a>
+<a href="category.html?name=entertainment" title="Entertainment"><svg class="icon"><use href="icons/sprite.svg#icon-film"/></svg><span class="nav-label">Entertainment</span></a>
+<a href="category.html?name=science" title="Science"><svg class="icon"><use href="icons/sprite.svg#icon-flask"/></svg><span class="nav-label">Science</span></a>
+<a href="category.html?name=business" title="Business"><svg class="icon"><use href="icons/sprite.svg#icon-trending-up"/></svg><span class="nav-label">Business</span></a>
+<a href="category.html?name=health" title="Health"><svg class="icon"><use href="icons/sprite.svg#icon-heart-pulse"/></svg><span class="nav-label">Health</span></a>
+</nav>
+</aside>
+<div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+<main class="main" id="main-content">
+<header class="header">
+<div class="header-left">
+<button class="mobile-menu-btn" aria-label="Open menu" id="mobile-menu-btn">
+<svg class="icon icon-lg"><use href="icons/sprite.svg#icon-menu"/></svg>
+</button>
+<span class="header-title">NewsSphere</span>
+</div>
+<div class="header-actions">
+<div class="search-box">
+<label for="header-search" class="sr-only">Search news</label>
+<svg class="icon icon-sm" aria-hidden="true"><use href="icons/sprite.svg#icon-search"/></svg>
+<input type="text" id="header-search" placeholder="Search news..." onkeydown="if(event.key==='Enter'){location.href='search.html?q='+encodeURIComponent(this.value)}" aria-label="Search news">
+</div>
+<div class="theme-picker"></div>
+<button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme"><svg class="icon"><use href="icons/sprite.svg#icon-sun"/></svg></button>
+</div>
+</header>
+<nav class="breadcrumb" aria-label="Breadcrumb">
+<a href="index.html">Home</a><span class="breadcrumb-sep"><svg class="icon icon-sm"><use href="icons/sprite.svg#icon-chevron-right"/></svg></span><span class="breadcrumb-current" id="breadcrumb-cat">Category</span>
+</nav>
+<div class="category-header" style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:var(--spacing-sm)">
+<div>
+<h1 id="category-title">World</h1>
+<p id="category-desc">Latest world news and global headlines</p>
+</div>
+<div class="dropdown" id="sort-dropdown">
+<button class="dropdown-trigger" aria-haspopup="listbox" aria-expanded="false">Sort: Newest</button>
+<div class="dropdown-menu" role="listbox">
+<button class="dropdown-item active" data-value="newest" role="option" aria-selected="true">Newest First</button>
+<button class="dropdown-item" data-value="oldest" role="option" aria-selected="false">Oldest First</button>
+</div>
+</div>
+</div>
+<section class="bottom" style="grid-template-columns:repeat(3,1fr)">
+<article class="card" tabindex="0" role="link" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<img class="card-img" src="https://picsum.photos/300/301" alt="Global Climate Summit Begins With Historic Commitments" loading="lazy" width="300" height="200">
+<div class="card-body"><div class="card-tag">World</div><h4 class="card-title">Global Climate Summit Begins With Historic Commitments</h4><p class="card-desc">190 nations gather to discuss ambitious new emission targets.</p><div class="card-meta"><span>1h ago</span><span>Reuters</span></div></div>
+</article>
+<article class="card" tabindex="0" role="link" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<img class="card-img" src="https://picsum.photos/300/302" alt="International Space Station Celebrates 30 Years" loading="lazy" width="300" height="200">
+<div class="card-body"><div class="card-tag">World</div><h4 class="card-title">International Space Station Celebrates 30 Years of Cooperation</h4><p class="card-desc">A milestone marking three decades of global scientific partnership.</p><div class="card-meta"><span>3h ago</span><span>BBC</span></div></div>
+</article>
+<article class="card" tabindex="0" role="link" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<img class="card-img" src="https://picsum.photos/300/303" alt="Peace Agreement Signed After Decades of Conflict" loading="lazy" width="300" height="200">
+<div class="card-body"><div class="card-tag">World</div><h4 class="card-title">Peace Agreement Signed After Decades of Conflict</h4><p class="card-desc">A landmark deal brings hope to millions in the region.</p><div class="card-meta"><span>5h ago</span><span>AP News</span></div></div>
+</article>
+<article class="card" tabindex="0" role="link" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<img class="card-img" src="https://picsum.photos/300/304" alt="Ocean Cleanup Project Removes One Million Tons of Plastic" loading="lazy" width="300" height="200">
+<div class="card-body"><div class="card-tag">World</div><h4 class="card-title">Ocean Cleanup Project Removes One Million Tons of Plastic</h4><p class="card-desc">A major milestone in the fight against ocean pollution.</p><div class="card-meta"><span>6h ago</span><span>Guardian</span></div></div>
+</article>
+<article class="card" tabindex="0" role="link" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<img class="card-img" src="https://picsum.photos/300/305" alt="Renewable Energy Now Powers 40% of Global Electricity" loading="lazy" width="300" height="200">
+<div class="card-body"><div class="card-tag">World</div><h4 class="card-title">Renewable Energy Now Powers 40% of Global Electricity</h4><p class="card-desc">Solar and wind lead the charge in a historic energy transition.</p><div class="card-meta"><span>8h ago</span><span>Al Jazeera</span></div></div>
+</article>
+<article class="card" tabindex="0" role="link" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<img class="card-img" src="https://picsum.photos/300/306" alt="New UN Report Warns of Rising Sea Levels" loading="lazy" width="300" height="200">
+<div class="card-body"><div class="card-tag">World</div><h4 class="card-title">New UN Report Warns of Rising Sea Levels</h4><p class="card-desc">Coastal cities urged to accelerate adaptation planning.</p><div class="card-meta"><span>10h ago</span><span>UN News</span></div></div>
+</article>
+</section>
+<footer class="footer">
+<span>© 2026 NewsSphere</span>
+<div class="footer-links"><a href="#">About</a><a href="#">Privacy</a><a href="#">Contact</a></div>
+</footer>
+</main>
+</div>
+<button id="back-to-top" class="back-to-top" aria-label="Back to top"><svg class="icon"><use href="icons/sprite.svg#icon-arrow-up"/></svg></button>
+<script src="js/api.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/components.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/category.js"></script>
+</body>
+</html>

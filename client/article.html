@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Article — NewsSphere</title>
+<meta name="description" content="Read the full article on NewsSphere.">
+<meta property="og:title" content="Article — NewsSphere">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="NewsSphere">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>N</text></svg>">
+<link rel="preconnect" href="https://picsum.photos" crossorigin>
+<link rel="preconnect" href="https://newsapi.org" crossorigin>
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/icons.css">
+<link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/article.css">
+<link rel="stylesheet" href="css/cards.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/ui-enhancements.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<script>(function(){var t=localStorage.getItem('theme')||'classic';if(t==='dark')document.documentElement.classList.add('dark');else if(t!=='classic')document.documentElement.classList.add('theme-'+t);var s=localStorage.getItem('sidebar');if(s==='collapsed')document.documentElement.classList.add('sidebar-collapsed');})();</script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none"><use href="icons/sprite.svg"/></svg>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div class="container">
+<aside class="sidebar" aria-label="Main navigation">
+<button class="sidebar-toggle" aria-label="Toggle sidebar" id="sidebar-toggle">
+<svg class="icon"><use href="icons/sprite.svg#icon-menu"/></svg>
+</button>
+<div class="logo" aria-label="NewsSphere">
+<svg class="icon icon-lg"><use href="icons/sprite.svg#icon-newspaper"/></svg>
+<span class="logo-text">NewsSphere</span>
+</div>
+<nav class="nav" aria-label="Category navigation">
+<a href="index.html" title="Home"><svg class="icon"><use href="icons/sprite.svg#icon-home"/></svg><span class="nav-label">Home</span></a>
+<a href="category.html?name=world" title="World"><svg class="icon"><use href="icons/sprite.svg#icon-globe"/></svg><span class="nav-label">World</span></a>
+<a href="category.html?name=technology" title="Technology"><svg class="icon"><use href="icons/sprite.svg#icon-cpu"/></svg><span class="nav-label">Tech</span></a>
+<a href="category.html?name=sports" title="Sports"><svg class="icon"><use href="icons/sprite.svg#icon-trophy"/></svg><span class="nav-label">Sports</span></a>
+<a href="category.html?name=entertainment" title="Entertainment"><svg class="icon"><use href="icons/sprite.svg#icon-film"/></svg><span class="nav-label">Entertainment</span></a>
+<a href="category.html?name=science" title="Science"><svg class="icon"><use href="icons/sprite.svg#icon-flask"/></svg><span class="nav-label">Science</span></a>
+<a href="category.html?name=business" title="Business"><svg class="icon"><use href="icons/sprite.svg#icon-trending-up"/></svg><span class="nav-label">Business</span></a>
+<a href="category.html?name=health" title="Health"><svg class="icon"><use href="icons/sprite.svg#icon-heart-pulse"/></svg><span class="nav-label">Health</span></a>
+</nav>
+</aside>
+<div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+<main class="main" id="main-content">
+<header class="header">
+<div class="header-left">
+<button class="mobile-menu-btn" aria-label="Open menu" id="mobile-menu-btn">
+<svg class="icon icon-lg"><use href="icons/sprite.svg#icon-menu"/></svg>
+</button>
+<span class="header-title">NewsSphere</span>
+</div>
+<div class="header-actions">
+<div class="search-box">
+<label for="header-search" class="sr-only">Search news</label>
+<svg class="icon icon-sm" aria-hidden="true"><use href="icons/sprite.svg#icon-search"/></svg>
+<input type="text" id="header-search" placeholder="Search news..." onkeydown="if(event.key==='Enter'){location.href='search.html?q='+encodeURIComponent(this.value)}" aria-label="Search news">
+</div>
+<div class="theme-picker"></div>
+<button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme"><svg class="icon"><use href="icons/sprite.svg#icon-sun"/></svg></button>
+</div>
+</header>
+<nav class="breadcrumb" id="article-breadcrumb" aria-label="Breadcrumb">
+<a href="index.html">Home</a><span class="breadcrumb-sep"><svg class="icon icon-sm"><use href="icons/sprite.svg#icon-chevron-right"/></svg></span><span class="breadcrumb-current">Article</span>
+</nav>
+<article class="article-page">
+<div class="article-hero">
+<img src="https://picsum.photos/900/500" alt="Scientists discover new Earth-like planet potentially habitable for life" width="900" height="500" fetchpriority="high">
+</div>
+<div class="article-header">
+<div class="card-tag">Technology</div>
+<h1>Scientists Discover New Earth-Like Planet Potentially Habitable for Life</h1>
+<div class="article-meta">
+<span>By Dr. Sarah Chen</span>
+<span>July 18, 2026</span>
+<span>5 min read</span>
+<span>Source: NASA</span>
+</div>
+</div>
+<div class="article-content">
+<p>A team of astronomers has confirmed the discovery of a new exoplanet that bears striking similarities to Earth, raising exciting possibilities for the existence of life beyond our solar system.</p>
+<p>The planet, designated Kepler-442c, orbits within the habitable zone of its host star — the region where conditions might be right for liquid water to exist on the surface. Located just 40 light-years from Earth, it is one of the closest potentially habitable worlds ever found.</p>
+<p>"This is a monumental discovery," said lead researcher Dr. Sarah Chen from the Massachusetts Institute of Technology. "The atmospheric composition data we've gathered suggests conditions remarkably similar to early Earth."</p>
+<p>The research team used advanced spectroscopic techniques to analyze the planet's atmosphere, detecting signatures of water vapor, carbon dioxide, and possibly methane — a combination that on Earth is often associated with biological activity.</p>
+<p>While the presence of these gases does not confirm life, it significantly narrows the search and provides a promising target for future observations with next-generation telescopes.</p>
+<p>The discovery was made possible by the James Webb Space Telescope's latest instrumentation upgrade, which allows for unprecedented precision in atmospheric characterization of distant worlds.</p>
+</div>
+<div class="article-actions">
+<a href="#" class="btn btn-primary">Read Original Article <svg class="icon icon-sm"><use href="icons/sprite.svg#icon-external-link"/></svg></a>
+<button class="btn btn-outline"><svg class="icon icon-sm"><use href="icons/sprite.svg#icon-share"/></svg> Share</button>
+</div>
+</article>
+<section class="category-section">
+<h3>Related Articles</h3>
+<div class="category-grid" style="grid-template-columns:repeat(3,1fr)">
+<article class="card" tabindex="0" role="link" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<img class="card-img" src="https://picsum.photos/300/210" alt="New Telescope Technology Could Revolutionize Space Exploration" loading="lazy" width="300" height="200">
+<div class="card-body">
+<div class="card-tag">Science</div>
+<h4 class="card-title">New Telescope Technology Could Revolutionize Space Exploration</h4>
+<div class="card-meta"><span>1d ago</span><span>Space.com</span></div>
+</div>
+</article>
+<article class="card" tabindex="0" role="link" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<img class="card-img" src="https://picsum.photos/300/211" alt="AI-Powered Discovery Tools Accelerate Scientific Research" loading="lazy" width="300" height="200">
+<div class="card-body">
+<div class="card-tag">Technology</div>
+<h4 class="card-title">AI-Powered Discovery Tools Accelerate Scientific Research</h4>
+<div class="card-meta"><span>2d ago</span><span>MIT Tech Review</span></div>
+</div>
+</article>
+<article class="card" tabindex="0" role="link" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<img class="card-img" src="https://picsum.photos/300/212" alt="Mars Colony Plans Advance as Rocket Technology Improves" loading="lazy" width="300" height="200">
+<div class="card-body">
+<div class="card-tag">Science</div>
+<h4 class="card-title">Mars Colony Plans Advance as Rocket Technology Improves</h4>
+<div class="card-meta"><span>3d ago</span><span>Wired</span></div>
+</div>
+</article>
+</div>
+</section>
+<footer class="footer">
+<span>© 2026 NewsSphere</span>
+<div class="footer-links">
+<a href="#">About</a>
+<a href="#">Privacy</a>
+<a href="#">Contact</a>
+</div>
+</footer>
+</main>
+</div>
+<button id="back-to-top" class="back-to-top" aria-label="Back to top"><svg class="icon"><use href="icons/sprite.svg#icon-arrow-up"/></svg></button>
+<div id="share-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="share-modal-title">
+<div class="modal">
+<div class="modal-header"><h3 id="share-modal-title">Share Article</h3><button class="modal-close" onclick="closeModal('share-modal')" aria-label="Close dialog"><svg class="icon"><use href="icons/sprite.svg#icon-x"/></svg></button></div>
+<div class="modal-body">
+<p style="margin-bottom:var(--spacing-md);color:var(--color-text-secondary)">Copy the link below to share this article:</p>
+<div style="display:flex;gap:var(--spacing-sm)">
+<input type="text" id="share-url" readonly style="flex:1;padding:var(--spacing-sm) var(--spacing-md);border:1px solid var(--color-input-border);border-radius:var(--radius-md);font-size:var(--font-size-sm);background:var(--color-input);color:var(--color-text)">
+<button class="btn btn-primary" onclick="navigator.clipboard.writeText(document.getElementById('share-url').value);showToast('Link copied!','success')"><svg class="icon icon-sm"><use href="icons/sprite.svg#icon-copy"/></svg> Copy</button>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-outline" onclick="closeModal('share-modal')">Close</button>
+</div>
+</div>
+</div>
+<script src="js/api.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/components.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/article.js"></script>
+</body>
+</html>

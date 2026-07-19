@@ -1,0 +1,127 @@
+/* Classic (default — already in :root) */
+/* Dark */
+html.dark,html.dark body{
+--color-primary:#e74c3c;--color-secondary:#2c2c2c;--color-accent:#e74c3c;
+--color-bg:#111;--color-surface:#1a1a1a;--color-sidebar:#222;--color-header:#1a1a1a;--color-footer:#111;
+--color-card:#222;--color-card-hover:#2a2a2a;--color-text:#e0e0e0;--color-text-secondary:#888;
+--color-border:#333;--color-link:#e74c3c;--color-btn:#e74c3c;--color-btn-hover:#c0392b;
+--color-input:#222;--color-input-border:#444;--color-hover:#2a2a2a;
+--color-success:#2a9d8f;--color-warning:#e9c46a;--color-danger:#e74c3c;
+--color-focus:rgba(231,76,60,.4);--color-scrollbar:#444;--color-scrollbar-track:#1a1a1a;
+--color-selection:rgba(231,76,60,.3)
+}
+/* Midnight */
+html.theme-midnight,body.theme-midnight{
+--color-primary:#6c5ce7;--color-secondary:#2d3436;--color-accent:#a29bfe;
+--color-bg:#0a0e17;--color-surface:#131a2b;--color-sidebar:#0d1321;--color-header:#131a2b;--color-footer:#0a0e17;
+--color-card:#1a2332;--color-card-hover:#222d3f;--color-text:#dfe6e9;--color-text-secondary:#636e72;
+--color-border:#2d3436;--color-link:#a29bfe;--color-btn:#6c5ce7;--color-btn-hover:#5a4bd1;
+--color-input:#1a2332;--color-input-border:#2d3436;--color-hover:#222d3f;
+--color-success:#00b894;--color-warning:#fdcb6e;--color-danger:#e17055;
+--color-focus:rgba(108,92,231,.4);--color-scrollbar:#2d3436;--color-scrollbar-track:#0a0e17;
+--color-selection:rgba(108,92,231,.3)
+}
+/* Ocean */
+html.theme-ocean,body.theme-ocean{
+--color-primary:#0984e3;--color-secondary:#dfe6e9;--color-accent:#00cec9;
+--color-bg:#f0f8ff;--color-surface:#ffffff;--color-sidebar:#e8f4fd;--color-header:#ffffff;--color-footer:#2d3436;
+--color-card:#ffffff;--color-card-hover:#f0f8ff;--color-text:#2d3436;--color-text-secondary:#636e72;
+--color-border:#b2bec3;--color-link:#0984e3;--color-btn:#0984e3;--color-btn-hover:#0770c2;
+--color-input:#ffffff;--color-input-border:#b2bec3;--color-hover:#f0f8ff;
+--color-success:#00b894;--color-warning:#fdcb6e;--color-danger:#d63031;
+--color-focus:rgba(9,132,227,.3);--color-scrollbar:#b2bec3;--color-scrollbar-track:#f0f8ff;
+--color-selection:rgba(9,132,227,.2)
+}
+/* Emerald */
+html.theme-emerald,body.theme-emerald{
+--color-primary:#00b894;--color-secondary:#e8f8f5;--color-accent:#00cec9;
+--color-bg:#f0faf7;--color-surface:#ffffff;--color-sidebar:#e0f5ee;--color-header:#ffffff;--color-footer:#1e3a2f;
+--color-card:#ffffff;--color-card-hover:#f0faf7;--color-text:#1e3a2f;--color-text-secondary:#5a7a6a;
+--color-border:#b2dfdb;--color-link:#00b894;--color-btn:#00b894;--color-btn-hover:#00a381;
+--color-input:#ffffff;--color-input-border:#b2dfdb;--color-hover:#f0faf7;
+--color-success:#00b894;--color-warning:#f9ca24;--color-danger:#e74c3c;
+--color-focus:rgba(0,184,148,.3);--color-scrollbar:#b2dfdb;--color-scrollbar-track:#f0faf7;
+--color-selection:rgba(0,184,148,.2)
+}
+/* Forest */
+html.theme-forest,body.theme-forest{
+--color-primary:#6ab04c;--color-secondary:#f5e6cc;--color-accent:#badc58;
+--color-bg:#2d3436;--color-surface:#3d4749;--color-sidebar:#263238;--color-header:#3d4749;--color-footer:#1b2631;
+--color-card:#3d4749;--color-card-hover:#4a5659;--color-text:#ecf0f1;--color-text-secondary:#95a5a6;
+--color-border:#5a6568;--color-link:#badc58;--color-btn:#6ab04c;--color-btn-hover:#559939;
+--color-input:#3d4749;--color-input-border:#5a6568;--color-hover:#4a5659;
+--color-success:#6ab04c;--color-warning:#f9ca24;--color-danger:#e74c3c;
+--color-focus:rgba(106,176,76,.4);--color-scrollbar:#5a6568;--color-scrollbar-track:#2d3436;
+--color-selection:rgba(106,176,76,.3)
+}
+/* Sunset */
+html.theme-sunset,body.theme-sunset{
+--color-primary:#e17055;--color-secondary:#ffeaa7;--color-accent:#fdcb6e;
+--color-bg:#fdf6ec;--color-surface:#ffffff;--color-sidebar:#fef3e2;--color-header:#ffffff;--color-footer:#2d3436;
+--color-card:#ffffff;--color-card-hover:#fdf6ec;--color-text:#2d3436;--color-text-secondary:#636e72;
+--color-border:#e0d5c1;--color-link:#e17055;--color-btn:#e17055;--color-btn-hover:#d35f46;
+--color-input:#ffffff;--color-input-border:#e0d5c1;--color-hover:#fdf6ec;
+--color-success:#00b894;--color-warning:#fdcb6e;--color-danger:#d63031;
+--color-focus:rgba(225,112,85,.3);--color-scrollbar:#e0d5c1;--color-scrollbar-track:#fdf6ec;
+--color-selection:rgba(225,112,85,.2)
+}
+/* Rose */
+html.theme-rose,body.theme-rose{
+--color-primary:#e84393;--color-secondary:#fdedf4;--color-accent:#fd79a8;
+--color-bg:#fef5f9;--color-surface:#ffffff;--color-sidebar:#fce4ef;--color-header:#ffffff;--color-footer:#2d3436;
+--color-card:#ffffff;--color-card-hover:#fef5f9;--color-text:#2d3436;--color-text-secondary:#636e72;
+--color-border:#f5c6d8;--color-link:#e84393;--color-btn:#e84393;--color-btn-hover:#d63384;
+--color-input:#ffffff;--color-input-border:#f5c6d8;--color-hover:#fef5f9;
+--color-success:#00b894;--color-warning:#fdcb6e;--color-danger:#e74c3c;
+--color-focus:rgba(232,67,147,.3);--color-scrollbar:#f5c6d8;--color-scrollbar-track:#fef5f9;
+--color-selection:rgba(232,67,147,.2)
+}
+/* Lavender */
+html.theme-lavender,body.theme-lavender{
+--color-primary:#9b59b6;--color-secondary:#f4ecf7;--color-accent:#8e44ad;
+--color-bg:#f8f5fc;--color-surface:#ffffff;--color-sidebar:#f0eaf6;--color-header:#ffffff;--color-footer:#2d3436;
+--color-card:#ffffff;--color-card-hover:#f8f5fc;--color-text:#2d3436;--color-text-secondary:#636e72;
+--color-border:#d7bde2;--color-link:#9b59b6;--color-btn:#9b59b6;--color-btn-hover:#8e44ad;
+--color-input:#ffffff;--color-input-border:#d7bde2;--color-hover:#f8f5fc;
+--color-success:#27ae60;--color-warning:#f39c12;--color-danger:#e74c3c;
+--color-focus:rgba(155,89,182,.3);--color-scrollbar:#d7bde2;--color-scrollbar-track:#f8f5fc;
+--color-selection:rgba(155,89,182,.2)
+}
+/* Slate */
+html.theme-slate,body.theme-slate{
+--color-primary:#636e72;--color-secondary:#dfe6e9;--color-accent:#2d3436;
+--color-bg:#f5f6fa;--color-surface:#ffffff;--color-sidebar:#e9ecef;--color-header:#ffffff;--color-footer:#2d3436;
+--color-card:#ffffff;--color-card-hover:#f5f6fa;--color-text:#2d3436;--color-text-secondary:#636e72;
+--color-border:#ced6e0;--color-link:#636e72;--color-btn:#636e72;--color-btn-hover:#535c60;
+--color-input:#ffffff;--color-input-border:#ced6e0;--color-hover:#f5f6fa;
+--color-success:#00b894;--color-warning:#fdcb6e;--color-danger:#d63031;
+--color-focus:rgba(99,110,114,.3);--color-scrollbar:#ced6e0;--color-scrollbar-track:#f5f6fa;
+--color-selection:rgba(99,110,114,.2)
+}
+/* Newspaper */
+html.theme-newspaper,body.theme-newspaper{
+--color-primary:#222;--color-secondary:#f5f5f5;--color-accent:#555;
+--color-bg:#f9f9f9;--color-surface:#ffffff;--color-sidebar:#f0f0f0;--color-header:#ffffff;--color-footer:#111;
+--color-card:#ffffff;--color-card-hover:#f9f9f9;--color-text:#111;--color-text-secondary:#555;
+--color-border:#ccc;--color-link:#222;--color-btn:#222;--color-btn-hover:#444;
+--color-input:#ffffff;--color-input-border:#ccc;--color-hover:#f5f5f5;
+--color-success:#222;--color-warning:#555;--color-danger:#222;
+--color-focus:rgba(0,0,0,.2);--color-scrollbar:#ccc;--color-scrollbar-track:#f9f9f9;
+--color-selection:rgba(0,0,0,.15)
+}
+/* High Contrast */
+html.theme-contrast,body.theme-contrast{
+--color-primary:#0000ff;--color-secondary:#ffff00;--color-accent:#ff0000;
+--color-bg:#ffffff;--color-surface:#ffffff;--color-sidebar:#ffffff;--color-header:#ffffff;--color-footer:#000000;
+--color-card:#ffffff;--color-card-hover:#ffff00;--color-text:#000000;--color-text-secondary:#333333;
+--color-border:#000000;--color-link:#0000ee;--color-btn:#0000ff;--color-btn-hover:#0000cc;
+--color-input:#ffffff;--color-input-border:#000000;--color-hover:#ffff00;
+--color-success:#008000;--color-warning:#ff8c00;--color-danger:#ff0000;
+--color-focus:rgba(0,0,255,.5);--color-scrollbar:#000000;--color-scrollbar-track:#ffffff;
+--color-selection:rgba(0,0,255,.3)
+}
+/* Skeleton + img overrides for dark themes */
+html.dark .skeleton,html.theme-midnight .skeleton,html.theme-forest .skeleton{
+background:linear-gradient(90deg,#333 25%,#3a3a3a 50%,#333 75%);background-size:200% 100%
+}
+html.dark img,html.theme-midnight img,html.theme-forest img{opacity:.95}

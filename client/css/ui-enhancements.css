@@ -1,0 +1,34 @@
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--spacing-sm);padding:var(--spacing-sm) var(--spacing-lg);border-radius:var(--radius-md);font-size:var(--font-size-sm);font-weight:var(--font-weight-bold);cursor:pointer;border:none;transition:background var(--transition-fast),transform var(--transition-fast)}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.btn:focus-visible{outline:2px solid var(--color-primary);outline-offset:2px}
+.btn-primary{background:var(--color-btn);color:#fff}
+.btn-primary:hover{background:var(--color-btn-hover)}
+.btn-outline{background:transparent;border:1px solid var(--color-border);color:var(--color-text)}
+.btn-outline:hover{background:var(--color-hover)}
+.skip-link{position:absolute;top:-100%;left:var(--spacing-md);background:var(--color-primary);color:#fff;padding:var(--spacing-sm) var(--spacing-md);border-radius:var(--radius-md);z-index:9999;font-size:var(--font-size-sm);font-weight:var(--font-weight-bold);text-decoration:none}
+.skip-link:focus{top:var(--spacing-md)}
+*:focus-visible{outline:2px solid var(--color-primary);outline-offset:2px}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--color-primary);outline-offset:1px}
+*:focus:not(:focus-visible){outline:none}
+.error-state{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:var(--spacing-xxl);text-align:center;gap:var(--spacing-md);min-height:200px;border-radius:var(--radius-lg)}
+.error-state .error-icon{font-size:48px;opacity:.6;margin-bottom:var(--spacing-sm)}
+.error-state h3{font-size:var(--font-size-lg);color:var(--color-text);font-weight:var(--font-weight-bold)}
+.error-state p{font-size:var(--font-size-sm);color:var(--color-text-secondary);max-width:400px;line-height:1.6}
+.error-state .btn{margin-top:var(--spacing-sm)}
+.empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:var(--spacing-xxl);text-align:center;gap:var(--spacing-sm);min-height:150px;border-radius:var(--radius-lg)}
+.empty-state .empty-icon{font-size:36px;opacity:.5;margin-bottom:var(--spacing-xs)}
+.empty-state p{font-size:var(--font-size-sm);color:var(--color-text-secondary);line-height:1.5}
+.api-status{position:fixed;bottom:var(--spacing-md);right:var(--spacing-md);display:flex;align-items:center;gap:var(--spacing-xs);padding:var(--spacing-xs) var(--spacing-md);background:var(--color-card);border-radius:var(--radius-full);box-shadow:var(--shadow-sm);font-size:var(--font-size-xs);color:var(--color-text-secondary);z-index:var(--z-overlay);border:1px solid var(--color-border)}
+.api-status .dot{width:8px;height:8px;border-radius:50%;background:var(--color-success)}
+.api-status .dot.error{background:var(--color-danger)}
+.api-status .dot.loading{background:var(--color-warning);animation:pulse 1s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.last-updated{font-size:var(--font-size-xs);color:var(--color-text-secondary);text-align:right;padding:var(--spacing-xs) 0}
+.back-to-top{position:fixed;bottom:60px;right:var(--spacing-md);width:40px;height:40px;border-radius:var(--radius-full);background:var(--color-primary);color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-md);z-index:var(--z-overlay);opacity:0;transform:translateY(10px);transition:opacity var(--transition-normal),transform var(--transition-normal);pointer-events:none;font-size:var(--font-size-md)}
+.back-to-top.visible{opacity:1;transform:translateY(0);pointer-events:auto}
+.back-to-top:hover{background:var(--color-btn-hover)}
+.theme-picker{display:flex;align-items:center;gap:2px;background:var(--color-card);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:2px}
+.theme-option{width:30px;height:30px;border:none;border-radius:var(--radius-full);background:transparent;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;transition:background var(--transition-fast),transform var(--transition-fast)}
+.theme-option:hover{background:var(--color-hover);transform:scale(1.15)}
+.theme-option.active{background:var(--color-primary);outline:2px solid var(--color-primary);outline-offset:1px}
+@media(max-width:600px){.theme-picker{display:none}}

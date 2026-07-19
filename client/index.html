@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NewsSphere — Your Daily News Aggregator</title>
+<meta name="description" content="Stay informed with NewsSphere. Aggregated news from multiple sources, categorized for easy browsing.">
+<meta property="og:title" content="NewsSphere — Your Daily News Aggregator">
+<meta property="og:description" content="Stay informed with NewsSphere. Aggregated news from multiple sources, categorized for easy browsing.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NewsSphere">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NewsSphere — Your Daily News Aggregator">
+<meta name="twitter:description" content="Stay informed with NewsSphere. Aggregated news from multiple sources.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>N</text></svg>">
+<link rel="preconnect" href="https://picsum.photos" crossorigin>
+<link rel="preconnect" href="https://newsapi.org" crossorigin>
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/icons.css">
+<link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/trending.css">
+<link rel="stylesheet" href="css/cards.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/themes.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/ui-enhancements.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animations.css">
+<script>(function(){var t=localStorage.getItem('theme')||'classic';if(t==='dark')document.documentElement.classList.add('dark');else if(t!=='classic')document.documentElement.classList.add('theme-'+t);var s=localStorage.getItem('sidebar');if(s==='collapsed')document.documentElement.classList.add('sidebar-collapsed');})();</script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none"><use href="icons/sprite.svg"/></svg>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div class="container">
+<aside class="sidebar" aria-label="Main navigation">
+<button class="sidebar-toggle" aria-label="Toggle sidebar" id="sidebar-toggle">
+<svg class="icon"><use href="icons/sprite.svg#icon-menu"/></svg>
+</button>
+<div class="logo" aria-label="NewsSphere">
+<svg class="icon icon-lg"><use href="icons/sprite.svg#icon-newspaper"/></svg>
+<span class="logo-text">NewsSphere</span>
+</div>
+<nav class="nav" aria-label="Category navigation">
+<a href="index.html" class="active" title="Home" aria-current="page"><svg class="icon"><use href="icons/sprite.svg#icon-home"/></svg><span class="nav-label">Home</span></a>
+<a href="category.html?name=world" title="World"><svg class="icon"><use href="icons/sprite.svg#icon-globe"/></svg><span class="nav-label">World</span></a>
+<a href="category.html?name=technology" title="Technology"><svg class="icon"><use href="icons/sprite.svg#icon-cpu"/></svg><span class="nav-label">Tech</span></a>
+<a href="category.html?name=sports" title="Sports"><svg class="icon"><use href="icons/sprite.svg#icon-trophy"/></svg><span class="nav-label">Sports</span></a>
+<a href="category.html?name=entertainment" title="Entertainment"><svg class="icon"><use href="icons/sprite.svg#icon-film"/></svg><span class="nav-label">Entertainment</span></a>
+<a href="category.html?name=science" title="Science"><svg class="icon"><use href="icons/sprite.svg#icon-flask"/></svg><span class="nav-label">Science</span></a>
+<a href="category.html?name=business" title="Business"><svg class="icon"><use href="icons/sprite.svg#icon-trending-up"/></svg><span class="nav-label">Business</span></a>
+<a href="category.html?name=health" title="Health"><svg class="icon"><use href="icons/sprite.svg#icon-heart-pulse"/></svg><span class="nav-label">Health</span></a>
+</nav>
+</aside>
+<div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+<main class="main" id="main-content">
+<header class="header">
+<div class="header-left">
+<button class="mobile-menu-btn" aria-label="Open menu" id="mobile-menu-btn">
+<svg class="icon icon-lg"><use href="icons/sprite.svg#icon-menu"/></svg>
+</button>
+<span class="header-title">NewsSphere</span>
+</div>
+<div class="header-actions">
+<div class="search-box">
+<label for="header-search" class="sr-only">Search news</label>
+<svg class="icon icon-sm" aria-hidden="true"><use href="icons/sprite.svg#icon-search"/></svg>
+<input type="text" id="header-search" placeholder="Search news..." onkeydown="if(event.key==='Enter'){location.href='search.html?q='+encodeURIComponent(this.value)}" aria-label="Search news">
+</div>
+<div class="theme-picker"></div>
+<button class="theme-toggle" title="Toggle theme" aria-label="Toggle theme"><svg class="icon"><use href="icons/sprite.svg#icon-sun"/></svg></button>
+</div>
+</header>
+<section class="top">
+<div class="hero">
+<img src="https://picsum.photos/900/600" alt="Scientists discover new Earth-like planet 40 light-years away" width="900" height="600" fetchpriority="high">
+<div class="hero-overlay">
+<span class="hero-badge">Breaking</span>
+<h1>Scientists Discover New Earth-Like Planet</h1>
+<p>Astronomers report a potentially habitable world just 40 light-years away.</p>
+<a href="article.html">Read More <svg class="icon icon-sm"><use href="icons/sprite.svg#icon-arrow-right"/></svg></a>
+</div>
+</div>
+<aside class="trending" aria-label="Trending articles">
+<h3><svg class="icon icon-sm"><use href="icons/sprite.svg#icon-fire"/></svg> Trending</h3>
+<div class="trending-list">
+<div class="trending-item" tabindex="0" role="button" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<div><b>World</b><p>Global climate summit begins with 190 nations attending.</p></div>
+</div>
+<div class="trending-item" tabindex="0" role="button" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<div><b>Tech</b><p>AI changes software development forever.</p></div>
+</div>
+<div class="trending-item" tabindex="0" role="button" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<div><b>Sports</b><p>Championship upset shocks millions of fans worldwide.</p></div>
+</div>
+<div class="trending-item" tabindex="0" role="button" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<div><b>Business</b><p>Markets rally on strong quarterly earnings reports.</p></div>
+</div>
+<div class="trending-item" tabindex="0" role="button" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<div><b>Science</b><p>New deep-sea species discovered in Pacific trench.</p></div>
+</div>
+</div>
+</aside>
+</section>
+<section class="bottom">
+<article class="card" tabindex="0" role="link" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<img class="card-img" src="https://picsum.photos/300/201" alt="New AI Model Breaks Language Barrier in Real-Time Translation">
+<div class="card-body">
+<div class="card-tag">Technology</div>
+<h4 class="card-title">New AI Model Breaks Language Barrier in Real-Time Translation</h4>
+<p class="card-desc">Researchers unveil an AI system capable of translating 100 languages instantly.</p>
+<div class="card-meta"><span>2h ago</span><span>TechCrunch</span></div>
+</div>
+</article>
+<article class="card" tabindex="0" role="link" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<img class="card-img" src="https://picsum.photos/300/202" alt="Underdog Team Wins Championship in Dramatic Overtime Finish">
+<div class="card-body">
+<div class="card-tag">Sports</div>
+<h4 class="card-title">Underdog Team Wins Championship in Dramatic Overtime Finish</h4>
+<p class="card-desc">An incredible comeback victory stuns fans across the globe.</p>
+<div class="card-meta"><span>3h ago</span><span>ESPN</span></div>
+</div>
+</article>
+<article class="card" tabindex="0" role="link" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<img class="card-img" src="https://picsum.photos/300/203" alt="NASA Confirms Water Ice on Mars Could Support Future Missions">
+<div class="card-body">
+<div class="card-tag">Science</div>
+<h4 class="card-title">NASA Confirms Water Ice on Mars Could Support Future Missions</h4>
+<p class="card-desc">New data reveals vast underground ice deposits near the equator.</p>
+<div class="card-meta"><span>5h ago</span><span>NASA</span></div>
+</div>
+</article>
+<article class="card" tabindex="0" role="link" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<img class="card-img" src="https://picsum.photos/300/204" alt="Summer Blockbuster Shatters Opening Weekend Records">
+<div class="card-body">
+<div class="card-tag">Entertainment</div>
+<h4 class="card-title">Summer Blockbuster Shatters Opening Weekend Records</h4>
+<p class="card-desc">The highly anticipated sequel earns $500 million in its first three days.</p>
+<div class="card-meta"><span>6h ago</span><span>Variety</span></div>
+</div>
+</article>
+<article class="card" tabindex="0" role="link" onclick="location.href='article.html'" onkeydown="if(event.key==='Enter')this.click()">
+<img class="card-img" src="https://picsum.photos/300/205" alt="Global Markets Surge as Trade Agreement Reached Between Major Powers">
+<div class="card-body">
+<div class="card-tag">Business</div>
+<h4 class="card-title">Global Markets Surge as Trade Agreement Reached Between Major Powers</h4>
+<p class="card-desc">Investors celebrate landmark deal resolving months of uncertainty.</p>
+<div class="card-meta"><span>7h ago</span><span>Bloomberg</span></div>
+</div>
+</article>
+</section>
+<footer class="footer">
+<span>© 2026 NewsSphere</span>
+<div class="footer-links">
+<a href="#">About</a>
+<a href="#">Privacy</a>
+<a href="#">Contact</a>
+</div>
+</footer>
+</main>
+</div>
+<button id="back-to-top" class="back-to-top" aria-label="Back to top"><svg class="icon"><use href="icons/sprite.svg#icon-arrow-up"/></svg></button>
+<div id="api-status" class="api-status" role="status" aria-live="polite"><span class="dot" aria-hidden="true"></span><span class="status-text">Loading...</span></div>
+<div id="last-updated" class="last-updated"></div>
+<script src="js/api.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/components.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
