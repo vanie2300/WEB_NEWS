@@ -3,6 +3,7 @@ services:
     name: newsphere
     runtime: node
     plan: free
+    rootDir: .
     buildCommand: npm install
     startCommand: node server/server.js
     envVars:
