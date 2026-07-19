@@ -12,10 +12,10 @@ services:
       - key: PORT
         value: 3000
       - key: NEWS_API_KEY
-        sync: false
+        value: 491137428012415691283ddf732a8638
       - key: GNEWS_API_KEY
-        sync: false
+        value: 85b98c11431c80d38c3a665779a8ed3bd
       - key: NEWSDATA_API_KEY
-        sync: false
+        value: pub_5409ce61ae184f548ee6fbe677772b5f
       - key: ALLOWED_ORIGIN
-        sync: false
+        value: https://newsphere.onrender.com
